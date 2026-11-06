@@ -185,5 +185,28 @@ window.location.href=`mailto:tanishqcreatio@gmail.com?subject=${subject}&body=${
 showProducts();
 showCart();
 </script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDxnjI-YBLHHJmOCi4qu5C6Q8aXXwe95Uw",
+    authDomain: "stickat-store.firebaseapp.com",
+    projectId: "stickat-store",
+    storageBucket: "stickat-store.firebasestorage.app",
+    messagingSenderId: "605883329748",
+    appId: "1:605883329748:web:4ec2cdbda780e62ec19f41",
+    measurementId: "G-ZB7QTS3WSQ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
